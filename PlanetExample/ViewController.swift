@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         let viewController = CountryPickerViewController()
         viewController.delegate = self
         
-        print("The current country is \(viewController.currentCountry)")
+        print("The current country is \(viewController.currentCountry?.name ?? "")")
         
         // Try out showning a custom list of country codes by uncommenting the following line:
         // viewController.countryCodes = ["US", "IN"]
